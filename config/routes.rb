@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   get 'hello/link' => 'hello#link'
   get 'tweets' => 'tweets#index'
   root 'hello#index'
+  get 'tweets/new' => 'tweets#new'
+  post 'tweets' => 'tweets#create'
 end
